@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Prelude - Alejandro Pavón Martínez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+            padding: 60px 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2b2b2b;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+        
+        .project-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            background: white;
+            border-left: 4px solid #e0e0e0;
+            border-radius: 4px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            min-height: 60px;
+        }
+        
+        .project-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-left-color: #0d4620;
+            transform: translateX(5px);
+        }
+        
+        .project-name {
+            font-weight: 600;
+            color: #2b2b2b;
+            font-size: 1.05rem;
+        }
+        
+        .badge {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            display: inline-block;
+            min-width: 100px;
+            text-align: center;
+        }
+        
+        .badge-current {
+            background-color: #26cdd3;
+            color: white;
+        }
+        
+        .badge-accessibility {
+            background-color: #1ddd5d;
+            color: white;
+        }
+        
+        .badge-multimedia {
+            background-color: #f5576c;
+            color: white;
+        }
+        
+        .project-item.responsive {
+            border-left-color: #667eea;
+        }
+        
+        .project-item.multimedia {
+            border-left-color: #f5576c;
+        }
+        
+        .project-item.accessibility {
+            border-left-color: #00f2fe;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .project-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            
+            .badge {
+                align-self: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prelude</h1>
+        <p class="subtitle">Explora las diferentes versiones del proyecto hechos por Alejandro Pavón Martínez.</p>
+        
+        <div class="projects-list">
+            <!-- Proyecto Responsive -->
+            <a href="Proyecto Responsive/index.html" class="project-item responsive" style="text-decoration: none;">
+                <span class="project-name">Versión Responsive del Proyecto</span>
+                <span class="badge badge-current">Responsive</span>
+            </a>
+            
+            <!-- Proyecto Accesibilidad -->
+            <a href="Proyecto AAA/index.html" class="project-item accessibility" style="text-decoration: none;">
+                <span class="project-name">Versión Accesibilidad del Proyecto</span>
+                <span class="badge badge-accessibility">Accesibilidad</span>
+            </a>
+            
+            <!-- Proyecto Multimedia -->
+            <a href="Proyecto Multimedia/index.html" class="project-item multimedia" style="text-decoration: none;">
+                <span class="project-name">Versión Multimedia del Proyecto</span>
+                <span class="badge badge-multimedia">Multimedia</span>
+            </a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
